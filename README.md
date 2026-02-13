@@ -1,7 +1,7 @@
 ## Infraestrutura de Dados de Escola de Idioma
 
 ### 1- Contexto de Negócio
-Este projeto simula a estruturação do ecossistema de dados para a Ẹ̀kọ́ Idiomas, uma nova escola focada no ensino de Inglês, Espanhol e Francês. O desafio central foi transformar a necessidade de controle operacional em uma infraestrutura de banco de dados relacional que suporte o crescimento da empresa.
+Este projeto simula a estruturação do ecossistema de dados para a Hash Idiomas, uma nova escola focada no ensino de Inglês, Espanhol e Francês. O desafio central foi transformar a necessidade de controle operacional em uma infraestrutura de banco de dados relacional que suporte o crescimento da empresa.
 
 A estratégia de dados foi dividida em dois pilares: <br>
 	• Integridade Operacional: garantir que alunos e cursos estejam devidamente vinculados às transações; <br>
