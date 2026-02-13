@@ -1,4 +1,4 @@
-![Capa do Projeto](lisa.jpg)
+<img src="lisa.jpg" width="800">
 
 ## Infraestrutura de Dados de Escola de Idioma
 
