@@ -1,6 +1,3 @@
-![lisa](https://github.com/user-attachments/assets/0e311bcc-f1dc-45e4-94fd-935bf58569d6)
-<img src="lisa.jpg" width="800">
-
 ## Infraestrutura de Dados de Escola de Idioma
 
 ### 1- Contexto de Negócio
