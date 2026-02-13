@@ -3,15 +3,19 @@
 ### 1- Contexto de Negócio
 Este projeto simula a estruturação do ecossistema de dados para a Ẹ̀kọ́ Idiomas, uma nova escola focada no ensino de Inglês, Espanhol e Francês. O desafio central foi transformar a necessidade de controle operacional em uma infraestrutura de banco de dados relacional que suporte o crescimento da empresa.
 
-A estratégia de dados foi dividida em dois pilares:
-	• Integridade Operacional: Garantir que alunos e cursos estejam devidamente vinculados às transações
+A estratégia de dados foi dividida em dois pilares: <br>
+	• Integridade Operacional: Garantir que alunos e cursos estejam devidamente vinculados às transações; <br>
 	• Flexibilidade Comercial: Permitir atualizações de preços e gestão de cancelamentos/reembolsos sem perda de histórico.
 
 ### 2- Implementação Técnica
 A estrutura foi normalizada em três tabelas principais para evitar redundância e garantir a performance das consultas: <br>
-		• Tabela "Cursos", armazenando o portfólio de produtos e seus respectivos valores unitários; <br>
-		• Tabela "Alunos", com cadastro centralizado de clientes; <br>
-		• Tabela "Vendas", tabela fato que registra o histórico de adesões, conectando alunos aos cursos. 
+			
+|	 	Tabela			|				Descrição 			|
+|-----------------------|-----------------------------------|
+| Cursos 				| Produtos disponíveis				|
+| Alunos 				| Cadastro centralizado de clientes |
+| Vendas				| Histórico de vendas				|
+
 
 ### 3- Dicionário de Dados
 Os tipos de dados utilizados para garantir eficiência, precisão e economia de de armazenamento são: 
