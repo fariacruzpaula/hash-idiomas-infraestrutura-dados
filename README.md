@@ -2,6 +2,7 @@
 
 ### 1- Contexto de Negócio
 A Hash Idiomas, uma escola que é focada no ensino de Inglês, Espanhol e Francês, está modernizando sua operação e decidiu digitalizar seus processos a fim de obter mais dados e clareza sobre suas vendas, clientes, receita etc. O desafio central é transformar a necessidade de controle operacional em uma infraestrutura de banco de dados relacional que suporte o crescimento da empresa.
+Para resolver este case, será utilizada a linguagem SQL.
 
 A estratégia de dados foi dividida em dois pilares: <br>
 	• Integridade Operacional: garantir que alunos e cursos estejam devidamente vinculados às transações; <br>
