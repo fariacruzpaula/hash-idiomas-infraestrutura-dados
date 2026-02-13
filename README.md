@@ -1,2 +1,34 @@
-# language-school-data-infra
-Estruturação de banco de dados SQL para gestão educacional. Inclui desde a modelagem de entidades-chave (Alunos, Cursos e Vendas) até a criação de schemas, tabelas com tipos de dados otimizados e operações DML (Insert, Update, Delete) para manutenção de registros e gestão de faturamento.
+## Infraestrutura de Dados de Escola de Idioma
+
+### 1- Contexto de Negócio
+Este projeto simula a estruturação do ecossistema de dados para a Ẹ̀kọ́ Idiomas, uma nova escola focada no ensino de Inglês, Espanhol e Francês. O desafio central foi transformar a necessidade de controle operacional em uma infraestrutura de banco de dados relacional que suporte o crescimento da empresa.
+
+A estratégia de dados foi dividida em dois pilares:
+	• Integridade Operacional: Garantir que alunos e cursos estejam devidamente vinculados às transações
+	• Flexibilidade Comercial: Permitir atualizações de preços e gestão de cancelamentos/reembolsos sem perda de histórico.
+
+### 2- Implementação Técnica
+A estrutura foi normalizada em três tabelas principais para evitar redundância e garantir a performance das consultas: <br>
+		• Tabela "Cursos", armazenando o portfólio de produtos e seus respectivos valores unitários; <br>
+		• Tabela "Alunos", com cadastro centralizado de clientes; <br>
+		• Tabela "Vendas", tabela fato que registra o histórico de adesões, conectando alunos aos cursos. 
+
+### 3- Dicionário de Dados
+Os tipos de dados utilizados para garantir eficiência, precisão e economia de de armazenamento são: 
+
+| Coluna      |	Tipo de Dado     |	Descrição                                 |
+|-------------|------------------|--------------------------------------------|
+| id_curso    | INT              | Identificador único (Primary Key)          |
+| nome_curso  | VARCHAR(50)      | Nome do idioma (Texto variável)            |
+| valor_curso | DECIMAL(5, 2)		 | Valor monetário                            |
+| data_venda  | DATE             | Data da compra                             |
+
+
+### 4 - Manipulação e Manutenção (DML)
+O projeto contempla scripts para situações reais de mercado: <br>
+	• Carga Inicial: Inserção de dados via INSERT INTO para popular o ecossistema; <br>
+	• Atualização de Preços: Uso de UPDATE com cláusula WHERE específica (ex: reajuste do valor do curso) <br>
+	• Gestão de Churn/Reembolso: Exclusão de registros de vendas canceladas via DELETE para manter o faturamento real atualizado. 
+
+
+	
