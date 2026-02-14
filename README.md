@@ -19,7 +19,7 @@ A estrutura foi normalizada em três tabelas principais para evitar redundância
 
 
 ### 3- Dicionário de Dados
-Os tipos de dados utilizados para garantir eficiência, precisão e economia de de armazenamento são: 
+Os tipos de dados utilizados para garantir eficiência, precisão e economia de armazenamento são: 
 
 | Coluna      	|	Tipo de Dado   |	         Descrição                        	|
 |-------------	|------------------|--------------------------------------------	|
